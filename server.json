@@ -1,11 +1,13 @@
 {
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.codexrunledger/codexrunledger-mcp",
-  "title": "CodexRun Ledger MCP",
-  "description": "Paid remote MCP for Codex run ledgers, changed-file evidence, scope summaries, missing proof checks, and client-ready handoff receipts.",
+  "description": "Codex run receipts your reviewer can trust.",
   "version": "1.0.0",
-  "websiteUrl": "https://codexrunledger.clauxel.com/",
-  "documentationUrl": "https://github.com/clauxel/codex-run-ledger-mcp",
-  "serverCardUrl": "https://codexrunledger.clauxel.com/server-card.json",
+  "website_url": "https://codexrunledger.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/codex-run-ledger-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
@@ -13,14 +15,22 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website."
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
         }
       ]
     }
   ],
-  "tags": [
-    "codex",
-    "audit",
-    "remote-mcp"
-  ]
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "CodexRun Ledger MCP",
+      "tags": [
+        "codex",
+        "audit",
+        "remote-mcp"
+      ],
+      "server_card_url": "https://codexrunledger.clauxel.com/server-card.json"
+    }
+  }
 }
