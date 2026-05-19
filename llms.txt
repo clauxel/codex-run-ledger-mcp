@@ -1,0 +1,12 @@
+# CodexRun Ledger MCP
+
+Paid remote MCP for Codex run ledgers, changed-file evidence, scope summaries, missing proof checks, and client-ready handoff receipts.
+
+Website: https://codexrunledger.clauxel.com/
+MCP endpoint: https://codexrunledger.clauxel.com/mcp
+Server card: https://codexrunledger.clauxel.com/server-card.json
+Docs: https://github.com/clauxel/codex-run-ledger-mcp
+
+Use case: Codex run receipts your reviewer can trust.
+Authentication: Bearer token required for production use.
+Tools: create_run_receipt, summarize_scope, list_missing_evidence, export_client_handoff
