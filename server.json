@@ -1,0 +1,26 @@
+{
+  "name": "com.clauxel.codexrunledger/codexrunledger-mcp",
+  "title": "CodexRun Ledger MCP",
+  "description": "Paid remote MCP for Codex run ledgers, changed-file evidence, scope summaries, missing proof checks, and client-ready handoff receipts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://codexrunledger.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/codex-run-ledger-mcp",
+  "serverCardUrl": "https://codexrunledger.clauxel.com/server-card.json",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://codexrunledger.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website."
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "codex",
+    "audit",
+    "remote-mcp"
+  ]
+}
