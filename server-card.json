@@ -1,0 +1,31 @@
+{
+  "name": "CodexRun Ledger",
+  "domain": "codexrunledger.clauxel.com",
+  "type": "MCP",
+  "description": "Turn Codex task runs into reviewer-ready usage receipts, scope notes, and client handoff evidence.",
+  "endpoint": "https://codexrunledger.clauxel.com/mcp",
+  "authentication": "Bearer token required for production use",
+  "tools": [
+    "create_run_receipt",
+    "summarize_scope",
+    "list_missing_evidence",
+    "export_client_handoff"
+  ],
+  "pricing": [
+    {
+      "name": "Solo",
+      "monthlyUsd": 29,
+      "limit": "800 run receipts"
+    },
+    {
+      "name": "Team",
+      "monthlyUsd": 99,
+      "limit": "8000 receipts and GitHub comments"
+    },
+    {
+      "name": "Studio",
+      "monthlyUsd": 249,
+      "limit": "80000 receipts and API"
+    }
+  ]
+}
